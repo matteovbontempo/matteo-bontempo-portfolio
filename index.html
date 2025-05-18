@@ -1,17 +1,24 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My portfolio</title>
 
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- FontAwesome for your social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Your custom CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <aside class="sidebar">
     <h1>Matteo Vito Bontempo</h1>
-    <h2>Computer Science</h2>
+    <h2>Computer Science & Accounting Student</h2>
     <p>
       Student with experience in web development, networking, and multiple
       programming languages, focused on building efficient, secure and scalable
@@ -25,122 +32,223 @@
     </nav>
 
     <div class="social-shortcuts">
-      <a href="https://www.linkedin.com/in/matteo-bontempo-" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+      <a
+        href="https://github.com/matteovbontempo"
+        target="_blank"
+        class="social-icon github"
+        aria-label="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/matteo-bontempo-/"
+        target="_blank"
+        class="social-icon linkedin"
+        aria-label="LinkedIn"
+      >
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <a href="https://www.instagram.com/vito.bontempo" target="_blank" class="social-icon instagram" aria-label="Instagram">
+      <a
+        href="https://www.instagram.com/vito.bontempo/"
+        target="_blank"
+        class="social-icon instagram"
+        aria-label="Instagram"
+      >
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="mailto:matteovbontempo@email.com" aria-label="Email" class="social-icon email">
+      <a
+        href="mailto:matteovbontempo@gmail.com"
+        class="social-icon email"
+        aria-label="Email"
+      >
         <i class="fas fa-envelope"></i>
       </a>
     </div>
-
   </aside>
 
   <main class="content">
+    <!-- ABOUT SECTION -->
     <section id="about" class="about-right">
       <p>
-        I'm a student from Argentina pursuing a double major in Computer Information Systems (CIS) and Accounting, with plans to graduate in December 2025. My academic journey reflects my deep interest in combining technology with business to create efficient, data-driven solutions.
+        I'm a student from Argentina pursuing a double major in Computer Information
+        Systems (CIS) and Accounting, with plans to graduate in December 2025.
+        My academic journey reflects my deep interest in combining technology
+        with business to create efficient, data-driven solutions.
       </p>
       <p>
-        I gained valuable experience working during the COVID-19 pandemic as a data entry assistant at a medical center. My responsibilities included uploading COVID-19 test results to the national health system of Argentina and sending lab reports — such as blood and urine tests — to patients. This role strengthened my attention to detail, responsibility under pressure, and communication skills in a high-demand environment.
+        I gained valuable experience working during the COVID-19 pandemic as a data
+        entry assistant at a medical center. My responsibilities included uploading
+        COVID-19 test results to the national health system of Argentina and sending
+        lab reports — such as blood and urine tests — to patients. This role
+        strengthened my attention to detail, responsibility under pressure, and
+        communication skills in a high-demand environment.
       </p>
       <p>
-        Currently, I´m doing an internship at CoolGeeks, where I work on repairing electronic devices, building websites and apps, and assisting with networking tasks. This experience helps me apply my technical knowledge in real-world scenarios and expand my skills in both hardware and software environments. I'm always looking for opportunities to grow, collaborate, and contribute in innovative and meaningful ways.
+        Currently, I’m interning at CoolGeeks, where I work on repairing electronic
+        devices, building websites and apps, and assisting with networking tasks.
+        This experience helps me apply my technical knowledge in real-world scenarios
+        and expand my skills in both hardware and software environments.
       </p>
     </section>
 
+    <!-- EXPERIENCE SECTION -->
     <section id="experience" class="experience-section">
-    
-
       <div class="exp-row">
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-header">
             <span class="exp-date">2025 — Present</span>
-            <h3> <a href="https://www.coolgeeksnc.net/" class="company-link" target="_blank" rel="noopener">Intern . CoolGeeks<i class="fas fa-arrow-up-right-from-square"></i></a></h3>
+            <h3>
+              <a
+                href="https://www.coolgeeksnc.net/"
+                class="company-link"
+                target="_blank"
+                rel="noopener"
+              >
+                Intern . CoolGeeks
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </h3>
           </div>
           <p>
             Repair electronic devices, build websites &amp; apps, and assist with
             networking tasks in a fast-paced environment.
           </p>
           <ul class="tech-stack">
-            <li>JavaScript</li><li>React</li><li>Node.js</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
           </ul>
         </div>
       </div>
 
       <div class="exp-row">
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-header">
             <span class="exp-date">2021 — 2023</span>
-            <h3><a href="https://laboratoriobontempo.com.ar/"
-              class="company-link"
-              target="_blank" rel="noopener">
-          Data Entry Specialist . Laboratorio Bontempo
-          <i class="fas fa-arrow-up-right-from-square"></i>
-          </a></h3>
+            <h3>
+              <a
+                href="https://laboratoriobontempo.com.ar/"
+                class="company-link"
+                target="_blank"
+                rel="noopener"
+              >
+                Data Entry Specialist . Laboratorio Bontempo
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </h3>
           </div>
           <p>
             Uploaded COVID-19 test results to Argentina’s national health system
             and generated patient lab reports under tight deadlines.
           </p>
           <ul class="tech-stack">
-            <li>SQL</li><li>Excel VBA</li>
+            <li>SQL</li>
+            <li>Excel VBA</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="projects-section reveal">
-      
+      <!-- Personal Portfolio Card -->
+      <div class="proj-card exp-card reveal">
+        <div class="exp-header">
+          <h3>
+            <a
+              href="https://matteovbontempo.github.io/matteo-bontempo-portfolio/"
+              class="company-link"
+              target="_blank"
+              rel="noopener"
+            >
+              Personal Portfolio ↗
+            </a>
+          </h3>
+        </div>
+        <p>
+          A fully responsive, two-column portfolio built with HTML, CSS &amp;
+          JavaScript, deployed via GitHub Pages. Shows experience cards,
+          smooth-scroll navigation, and hover interactions.
+        </p>
+        <ul class="tech-stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>GitHub Pages</li>
+        </ul>
+      </div>
 
-  <div class="proj-card exp-card reveal">
-    <div class="exp-header">
-      <h3>
-        <a href="https://matteovbontempo.github.io/matteo-bontempo-portfolio/"
-           class="company-link" target="_blank" rel="noopener">
-          Personal Portfolio ↗
+      <!-- NEW: SMA Backtester Card -->
+      <div class="proj-card exp-card reveal">
+        <div class="exp-header">
+          <h3>
+            <a
+              href="https://multi-asset-sma-backtester-matteovbontempo.streamlit.app/"
+              class="company-link"
+              target="_blank"
+              rel="noopener"
+            >
+              Multi-Asset SMA Backtesting Tool ↗
+            </a>
+          </h3>
+        </div>
+        <!-- Screenshot (replace path if needed) -->
+        <a
+          href="https://multi-asset-sma-backtester-matteovbontempo.streamlit.app/"
+          target="_blank"
+          rel="noopener"
+        >
         </a>
-      </h3>
-    </div>
-
-    <p>
-      A fully responsive, two-column portfolio built with HTML &amp; CSS, and JavaScript
-      deployed via GitHub Pages. Shows experience cards, smooth-scroll navigation,
-      and hover interactions.
-    </p>
-
-    <ul class="tech-stack">
-      <li>HTML</li><li>CSS</li><li>GitHub Pages</li><li>JavaScript</li>
-    </ul>
-  </div>
-
-</section>
+        <p>
+          A Streamlit web app to backtest SMA20 vs SMA50 crossover strategies on
+          any list of stock tickers—featuring live price previews, performance
+          summaries, detailed charts, and CSV exports.
+        </p>
+        <ul class="tech-stack">
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>NumPy</li>
+          <li>C++</li>
+          <li>yfinance</li>
+          <li>Matplotlib</li>
+        </ul>
+        <p class="project-links">
+          
+          
+        </p>
+      </div>
+    </section>
   </main>
 
   <script>
+    // reveal-on-scroll
     const hiddenEls = document.querySelectorAll('.exp-card, .reveal');
     hiddenEls.forEach(el => el.classList.add('is-hidden'));
     const obs = new IntersectionObserver(
-      e => e.forEach(i=>{
-        if(i.isIntersecting){ i.target.classList.remove('is-hidden'); obs.unobserve(i.target); }
-      }), {threshold:.15}
+      entries => entries.forEach(i => {
+        if (i.isIntersecting) {
+          i.target.classList.remove('is-hidden');
+          obs.unobserve(i.target);
+        }
+      }),
+      { threshold: 0.15 }
     );
-    hiddenEls.forEach(el=>obs.observe(el));
+    hiddenEls.forEach(el => obs.observe(el));
 
+    // section nav highlighting
     const sections = document.querySelectorAll('main section[id]');
-    const links    = document.querySelectorAll('.section-link');
+    const links = document.querySelectorAll('.section-link');
     function setActive(){
-      const y = window.scrollY + window.innerHeight*0.3;
-      sections.forEach(sec=>{
-        if(y>=sec.offsetTop && y<sec.offsetTop+sec.offsetHeight){
-          links.forEach(l=>l.classList.remove('active'));
+      const y = window.scrollY + window.innerHeight * 0.3;
+      sections.forEach(sec => {
+        if (y >= sec.offsetTop && y < sec.offsetTop + sec.offsetHeight) {
+          links.forEach(l => l.classList.remove('active'));
           document.querySelector(`.section-link[href="#${sec.id}"]`).classList.add('active');
         }
       });
     }
-    window.addEventListener('scroll',setActive); setActive();
+    window.addEventListener('scroll', setActive);
+    setActive();
   </script>
 </body>
 </html>
