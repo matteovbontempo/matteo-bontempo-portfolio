@@ -218,3 +218,285 @@ body{
   transform: translateY(-1px);
   opacity: 1;
 }
+
+/* Responsive Design - Mobile First Approach */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    padding: 2.5rem 2rem 2rem;
+    order: 1;
+    background: linear-gradient(135deg, #f5f5dc 0%, #e8e8d0 100%);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .sidebar h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .sidebar p {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 2rem 2rem 3rem;
+    order: 2;
+    flex: 1;
+  }
+  
+  .section-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .section-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .section-link::before {
+    display: none;
+  }
+  
+  .section-link:hover {
+    background: rgba(255,255,255,0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .section-link.active {
+    background: #2c3e50;
+    color: white;
+    border-color: #2c3e50;
+  }
+  
+  .social-shortcuts {
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .exp-card {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  .exp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+  
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .exp-date {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .exp-card h3 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  .exp-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+  }
+  
+  .tech-stack {
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+  
+  .tech-stack li {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    background: rgba(44, 62, 80, 0.1);
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  
+  .about-right p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .projects-section h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-section {
+    padding: 2rem 0 3rem;
+  }
+  
+  .projects-section {
+    padding-top: 2rem;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 22rem;
+    padding: 2.5rem 1.5rem 2rem;
+  }
+  
+  .content {
+    margin-left: 22rem;
+    width: calc(100% - 22rem);
+    padding: 2.5rem 2rem 3rem;
+  }
+  
+  .sidebar h1 {
+    font-size: 1.8rem;
+  }
+  
+  .sidebar p {
+    width: 100%;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 1.5rem 1rem 1rem;
+  }
+  
+  .content {
+    padding: 1rem 1rem 1.5rem;
+  }
+  
+  .sidebar h1 {
+    font-size: 1.5rem;
+  }
+  
+  .section-nav {
+    gap: 1rem;
+  }
+  
+  .section-link {
+    font-size: 0.65rem;
+  }
+  
+  .social-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+  
+  .exp-card {
+    padding: 0.875rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .about-right p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape mobile adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 20rem;
+    padding: 1.5rem 1rem 1rem;
+  }
+  
+  .content {
+    margin-left: 20rem;
+    width: calc(100% - 20rem);
+    padding: 1.5rem 1.5rem 2rem;
+  }
+  
+  .sidebar h1 {
+    font-size: 1.4rem;
+  }
+  
+  .sidebar h2 {
+    font-size: 0.8rem;
+  }
+  
+  .sidebar p {
+    font-size: 0.75rem;
+  }
+  
+  .section-nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .section-link {
+    padding-left: 1.5rem;
+    font-size: 0.65rem;
+  }
+  
+  .section-link::before {
+    display: block;
+    width: 1.2rem;
+  }
+}
