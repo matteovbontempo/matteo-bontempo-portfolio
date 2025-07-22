@@ -219,28 +219,16 @@ body{
   opacity: 1;
 }
 
-<<<<<<< HEAD
 /* Mobile Vertical Optimization */
 @media screen and (max-width: 768px) and (orientation: portrait) {
   body {
     flex-direction: column;
-=======
-/* Responsive Design - Mobile First Approach */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    min-height: 100vh;
-    background: #f5f5dc;
-    margin: 0;
-    padding: 0;
->>>>>>> 088449983a8b63a525fbb65e607db768337b17af
   }
   
   .sidebar {
     position: relative;
     inset: auto;
     width: 100%;
-<<<<<<< HEAD
     padding: 2rem 1.5rem 1.5rem;
     gap: 1.25rem;
   }
@@ -251,267 +239,15 @@ body{
   
   .sidebar h2 {
     font-size: 0.9rem;
-=======
-    padding: 3rem 2rem 2.5rem;
-    order: 1;
-    background: #f5f5dc;
-    border-bottom: 2px solid rgba(0,0,0,0.1);
-    margin-bottom: 0;
-    text-align: center;
-  }
-  
-  .sidebar h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
-    font-weight: 800;
-    letter-spacing: -1px;
-  }
-  
-  .sidebar h2 {
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #555;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
->>>>>>> 088449983a8b63a525fbb65e607db768337b17af
   }
   
   .sidebar p {
     width: 100%;
-<<<<<<< HEAD
     font-size: 0.85rem;
   }
   
   .social-shortcuts {
     gap: 0.6rem;
-=======
-    font-size: 1rem;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    line-height: 1.7;
-    color: #2c3e50;
-  }
-  
-  .content {
-    margin-left: 0;
-    width: 100%;
-    padding: 2rem 2rem 3rem;
-    order: 2;
-    flex: 1;
-    background: #f5f5dc;
-  }
-  
-  .section-nav {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-  }
-  
-  .section-link {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.8rem;
-    background: rgba(0,0,0,0.05);
-    border-radius: 25px;
-    border: 2px solid rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    color: #2c3e50;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .section-link::before {
-    display: none;
-  }
-  
-  .section-link:hover {
-    background: rgba(0,0,0,0.1);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    border-color: rgba(0,0,0,0.2);
-  }
-  
-  .section-link.active {
-    background: #2c3e50;
-    color: white;
-    border-color: #2c3e50;
-    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3);
-  }
-  
-  .social-shortcuts {
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 1.2rem;
-  }
-  
-  .social-icon {
-    width: 4rem;
-    height: 4rem;
-    font-size: 1.4rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    background: #eaeaea;
-    color: #555;
-    border: 2px solid rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    background: #dcdcdc;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    border-color: rgba(0,0,0,0.2);
-  }
-  
-  .exp-card {
-    margin-bottom: 2.5rem;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,0.05);
-    background: rgba(0,0,0,0.05);
-  }
-  
-  .exp-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-  }
-  
-  .exp-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .exp-date {
-    font-size: 0.85rem;
-    color: #666;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background: rgba(0,0,0,0.1);
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-  }
-  
-  .exp-card h3 {
-    font-size: 1.4rem;
-    margin: 0;
-    color: #2c3e50;
-    font-weight: 700;
-  }
-  
-  .exp-card p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin: 1.5rem 0;
-    color: #2c3e50;
-  }
-  
-  .tech-stack {
-    gap: 0.6rem;
-    margin-top: 1.5rem;
-  }
-  
-  .tech-stack li {
-    font-size: 0.8rem;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    background: rgba(0,0,0,0.12);
-    color: #2c3e50;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .about-right p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.8;
-    text-align: justify;
-    color: #2c3e50;
-    background: rgba(0,0,0,0.05);
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #2c3e50;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-  }
-  
-  .projects-section h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2.5rem;
-    color: #2c3e50;
-    font-weight: 800;
-  }
-  
-  .experience-section {
-    padding: 2rem 0 3rem;
-  }
-  
-  .projects-section {
-    padding-top: 2rem;
-  }
-}
-
-/* Tablet adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .sidebar {
-    width: 22rem;
-    padding: 2.5rem 1.5rem 2rem;
-  }
-  
-  .content {
-    margin-left: 22rem;
-    width: calc(100% - 22rem);
-    padding: 2.5rem 2rem 3rem;
-  }
-  
-  .sidebar h1 {
-    font-size: 1.8rem;
-  }
-  
-  .sidebar p {
-    width: 100%;
-  }
-}
-
-/* Small mobile adjustments */
-@media (max-width: 480px) {
-  .sidebar {
-    padding: 1.5rem 1rem 1rem;
-  }
-  
-  .content {
-    padding: 1rem 1rem 1.5rem;
-  }
-  
-  .sidebar h1 {
-    font-size: 1.5rem;
-  }
-  
-  .section-nav {
-    gap: 1rem;
-  }
-  
-  .section-link {
-    font-size: 0.65rem;
->>>>>>> 088449983a8b63a525fbb65e607db768337b17af
   }
   
   .social-icon {
@@ -520,7 +256,6 @@ body{
     font-size: 1rem;
   }
   
-<<<<<<< HEAD
   .section-nav {
     gap: 0.8rem;
     margin-top: 0.25rem;
@@ -597,61 +332,5 @@ body{
   .company-link i {
     font-size: 0.7rem;
     margin-left: 0.2rem;
-=======
-  .exp-card {
-    padding: 0.875rem 1rem;
-    font-size: 0.85rem;
-  }
-  
-  .about-right p {
-    font-size: 0.85rem;
-  }
-}
-
-/* Landscape mobile adjustments */
-@media (max-width: 768px) and (orientation: landscape) {
-  body {
-    flex-direction: row;
-  }
-  
-  .sidebar {
-    position: fixed;
-    inset: 0 auto 0 0;
-    width: 20rem;
-    padding: 1.5rem 1rem 1rem;
-  }
-  
-  .content {
-    margin-left: 20rem;
-    width: calc(100% - 20rem);
-    padding: 1.5rem 1.5rem 2rem;
-  }
-  
-  .sidebar h1 {
-    font-size: 1.4rem;
-  }
-  
-  .sidebar h2 {
-    font-size: 0.8rem;
-  }
-  
-  .sidebar p {
-    font-size: 0.75rem;
-  }
-  
-  .section-nav {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  
-  .section-link {
-    padding-left: 1.5rem;
-    font-size: 0.65rem;
-  }
-  
-  .section-link::before {
-    display: block;
-    width: 1.2rem;
->>>>>>> 088449983a8b63a525fbb65e607db768337b17af
   }
 }
