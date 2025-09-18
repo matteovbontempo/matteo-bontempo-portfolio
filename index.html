@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
   <title>My portfolio</title>
 
   <!-- FontAwesome for your social icons -->
@@ -15,7 +12,7 @@
   />
 
   <!-- Your custom CSS -->
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -87,19 +84,44 @@
         communication skills in a high-demand environment.
       </p>
       <p>
-        Currently, I’m interning at CoolGeeks, where I work on repairing electronic
-        devices, building websites and apps, and assisting with networking tasks.
-        This experience helps me apply my technical knowledge in real-world scenarios
-        and expand my skills in both hardware and software environments.
+        I recently completed an internship at CoolGeeks, where I worked on repairing electronic devices, building websites and apps, and assisting with networking tasks. This experience allowed me to apply my technical knowledge in real-world scenarios and expand my skills in both hardware and software environments.
       </p>
     </section>
 
     <!-- EXPERIENCE SECTION -->
     <section id="experience" class="experience-section">
       <div class="exp-row">
+  <div class="exp-card reveal">
+    <div class="exp-header">
+      <span class="exp-date">August 2025 — December 2025</span>
+      <h3>
+        <a
+          href="https://ncwu.edu/event-location/gateway-technology-center/"
+          class="company-link"
+          target="_blank"
+          rel="noopener"
+        >
+          Front-Desk Assistant · Gateway Technology Center (NC Wesleyan)
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </h3>
+    </div>
+    <p>
+      Front-desk support for students, faculty, and visitors: reception, managing room reservations, phone and email assistance, basic computer/lab support, and coordination with campus staff.
+    </p>
+    <ul class="tech-stack">
+      <li>Customer Service</li>
+      <li>Scheduling</li>
+      <li>Microsoft Office</li>
+    </ul>
+  </div>
+</div>
+
+      
+      <div class="exp-row">
         <div class="exp-card reveal">
           <div class="exp-header">
-            <span class="exp-date">2025 — Present</span>
+            <span class="exp-date">April 2025 — August 2025</span>
             <h3>
               <a
                 href="https://www.coolgeeksnc.net/"
@@ -113,9 +135,14 @@
             </h3>
           </div>
           <p>
-            Repair electronic devices, build websites &amp; apps, and assist with
-            networking tasks in a fast-paced environment.
-          </p>
+  Built and shipped a full-stack repair-shop app used in-store: streamlined
+  device intake and diagnostics, created/managed work orders, assigned
+  technicians, tracked statuses, generated estimates/invoices, and handled
+  payments. Also supported networking tasks (basic routing/switching, Wi-Fi
+  setup, cabling) and helped debug web issues—prioritizing clear UX and fast,
+  reliable workflows.
+</p>
+
           <ul class="tech-stack">
             <li>JavaScript</li>
             <li>React</li>
@@ -127,7 +154,7 @@
       <div class="exp-row">
         <div class="exp-card reveal">
           <div class="exp-header">
-            <span class="exp-date">2021 — 2023</span>
+            <span class="exp-date">May 2021 — August 2022</span>
             <h3>
               <a
                 href="https://laboratoriobontempo.com.ar/"
@@ -141,9 +168,13 @@
             </h3>
           </div>
           <p>
-            Uploaded COVID-19 test results to Argentina’s national health system
-            and generated patient lab reports under tight deadlines.
-          </p>
+  Processed high-volume clinical data with zero-defect standards: uploaded
+  COVID-19 results to Argentina’s national health system, generated and
+  delivered patient reports under tight deadlines, and safeguarded sensitive
+  information. Improved throughput by organizing queues and creating small
+  SQL/Excel-VBA helpers to reduce repetitive steps.
+</p>
+
           <ul class="tech-stack">
             <li>SQL</li>
             <li>Excel VBA</li>
@@ -220,6 +251,45 @@
           
         </p>
       </div>
+
+      <div class="proj-card exp-card reveal">
+  <div class="exp-header">
+    <h3>
+      <a
+        href="https://youtube.com/shorts/XsIjGP6WVUI?feature=share"
+        class="company-link"
+        target="_blank"
+        rel="noopener"
+      >
+        CoolGeeks App · Demo (YouTube) ↗
+      </a>
+    </h3>
+  </div>
+  <p>
+  Full-stack MERN application for end-to-end device-repair operations: customer/device intake,
+  diagnostic notes, work-order lifecycle (create → assign → update → close), parts & estimates,
+  invoicing, and payment capture. Front end in React with routed views and form validation; back
+  end in Node.js/Express exposing RESTful endpoints with centralized error handling and validation;
+  persistence in MongoDB (Mongoose schemas, indexes). Includes JWT-based, role-based access
+  control (admin/technician/front-desk), server-side filtering/pagination/sorting, and basic audit trails.
+</p>
+
+  <ul class="tech-stack">
+    <li>React</li>
+    <li>Node.js</li>
+    <li>Express</li>
+    <li>MongoDB</li>
+  </ul>
+  <p class="project-links">
+    <a
+      href="https://youtube.com/shorts/XsIjGP6WVUI?feature=share"
+      target="_blank"
+      rel="noopener"
+      aria-label="Watch demo on YouTube"
+    ></a>
+  </p>
+</div>
+
     </section>
   </main>
 
